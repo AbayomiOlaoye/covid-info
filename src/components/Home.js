@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { MdSearch, MdOutlineChevronRight, MdOutlineTimelapse } from 'react-icons/md';
-import { fetchCovidData } from '../src/redux/fetchData';
+import { fetchCovidData } from '../redux/fetchData';
 
 const Home = () => {
   const dispatch = useDispatch();
-  const { countries, status } = useSelector((state) => state.datas);
+  const { countries, status } = useSelector((state) => state.data);
   const [search, setSearch] = useState('');
 
   useEffect(() => {
@@ -20,23 +20,23 @@ const Home = () => {
       {status === 'pending' && (
         <div className="loading">
           <h3>
-            {MdOutlineTimelapse}
+            <MdOutlineTimelapse />
             Loading...
           </h3>
         </div>
       )}
-      {status === 'success' && (
-        <div className="success">
-          <div className="search">
-            <h1 className="live_">Live preview</h1>
+      {status === 'fulfilled' && (
+        <div className="success flex column">
+          <div className="search flex column">
+            <h1 className="live">Recent Counts</h1>
             <input
               type="text"
               value={search}
               onChange={(event) => setSearch(event.target.value)}
               placeholder="Search"
-              className="check"
+              className="checker"
             />
-            { MdSearch }
+            <MdSearch className="search-box" />
           </div>
           <div className="container">
             {countries
@@ -50,11 +50,11 @@ const Home = () => {
               ).map((item) => (
                 <div key={item.updated} className="country_display">
                   <NavLink state={item} to={`/details/${item.updated}`}>
-                    {MdOutlineChevronRight}
+                    <MdOutlineChevronRight className="right-home icon" />
                   </NavLink>
                   <div className="update_countries">
                     <h3>{item.continent}</h3>
-                    <p>{item.updated}</p>
+                    <p className="up">{item.updated}</p>
                   </div>
                 </div>
               ))}

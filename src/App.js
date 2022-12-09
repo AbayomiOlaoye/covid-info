@@ -1,11 +1,21 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Navigation from './components/Navigation';
 import './App.css';
+import ShowInfo from './components/ShowInfo';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Testing</h1>
-    </div>
+    <BrowserRouter>
+      <Navigation />
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/details/:updated" element={<ShowInfo />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

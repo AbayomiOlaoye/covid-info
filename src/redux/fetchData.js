@@ -1,4 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+// import axios from 'axios';
 
 const BASE_URL = 'https://disease.sh/v3/covid-19/continents';
 
@@ -8,8 +9,8 @@ export const fetchCovidData = createAsyncThunk('countries/fetchData', async () =
   return response;
 });
 
-const covidSlicer = createSlice({
-  name: 'country',
+const CovidSlicer = createSlice({
+  name: 'countries',
   initialState: {
     countries: [],
     status: null,
@@ -34,4 +35,4 @@ const covidSlicer = createSlice({
   },
 });
 
-export default covidSlicer.reducer;
+export default CovidSlicer.reducer;

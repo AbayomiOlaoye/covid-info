@@ -1,7 +1,11 @@
-import { applyMiddleware, configureStore } from '@reduxjs/toolkit';
+import { applyMiddleware, combineReducers, configureStore } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
-import covidReducer from './fetchData';
+import CovidReducer from './fetchData';
 
-const store = configureStore(covidReducer, applyMiddleware(thunk));
+const reducer = combineReducers({
+  data: CovidReducer,
+});
+
+const store = configureStore({ reducer }, applyMiddleware(thunk));
 
 export default store;
