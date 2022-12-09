@@ -124,7 +124,7 @@ tr:nth-of-type(odd) {
 }
 
 .search {
-  width: 60%;
+  width: 80%;
   position: relative;
   margin: 2rem auto;
   text-align: center;
@@ -132,14 +132,19 @@ tr:nth-of-type(odd) {
 
 .search-box {
   position: relative;
-  top: -25px;
-  left: 200px;
+  top: -26px;
+  left: 240px;
+  font-size: 140%;
 }
 
 .checker {
-  max-width: 500px;
+  width: 80%;
   font-size: 1rem;
   padding: 0.5rem;
+  margin: 1rem auto 0;
+  /* stylelint-disable-next-line csstree/validator */
+  accent-color: #c01171;
+  caret-color: #c01171;
 }
 
 .live {
@@ -154,5 +159,18 @@ tr:nth-of-type(odd) {
 
   .country_display {
     padding: 4rem 2rem;
+  }
+
+  .container {
+    width: 85%;
+  }
+
+  .checker {
+    max-width: 600px;
+  }
+
+  .search-box {
+    left: 900px;
+    font-size: 140%;
   }
 }
