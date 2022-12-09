@@ -1,9 +1,10 @@
 import { useLocation, NavLink } from 'react-router-dom';
+import { MdOutlineChevronLeft } from 'react-icons/md';
 
 import React from 'react';
 
   <NavLink details to="/">
-    <h1>Go</h1>
+    {MdOutlineChevronLeft}
   </NavLink>;
 
 const ShowInfo = () => {

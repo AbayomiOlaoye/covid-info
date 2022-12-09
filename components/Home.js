@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import { MdSearch, MdOutlineChevronRight, MdOutlineTimelapse } from 'react-icons/md';
 import { fetchCovidData } from '../src/redux/fetchData';
 
 const Home = () => {
@@ -18,7 +19,10 @@ const Home = () => {
     <div className="heroPage">
       {status === 'pending' && (
         <div className="loading">
-          <h3>Loading...</h3>
+          <h3>
+            {MdOutlineTimelapse}
+            Loading...
+          </h3>
         </div>
       )}
       {status === 'success' && (
@@ -32,7 +36,7 @@ const Home = () => {
               placeholder="Search"
               className="check"
             />
-            {/* <FontAwesomeIcon icon={faSearch} className="search_icon" /> */}
+            { MdSearch }
           </div>
           <div className="container">
             {countries
@@ -46,10 +50,7 @@ const Home = () => {
               ).map((item) => (
                 <div key={item.updated} className="country_display">
                   <NavLink state={item} to={`/details/${item.updated}`}>
-                    {/* <FontAwesomeIcon
-                      icon={faCircleArrowRight}
-                      className="arrow-right"
-                    /> */}
+                    {MdOutlineChevronRight}
                   </NavLink>
                   <div className="update_countries">
                     <h3>{item.continent}</h3>
