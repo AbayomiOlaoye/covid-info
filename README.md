@@ -6,6 +6,7 @@
 - [🛠 Built With](#built-with)
   - [Tech Stack](#tech-stack)
 - [Key Features](#key-features)
+- [Future Features](#future-features)
 - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -44,6 +45,16 @@ Covid Info App is an initiative aimed at providing accurate statistics and repor
 
 # Key Feature <a name="key-features"></a>
 - **Fetches Covid-19 prevalence  data by continent**
+- **Users can search on continent basis**
+- **Users can view Covid-related details of chosen continents**
+- **Use of conditional rendering to abstract supposed complexity of the app**
+- **The app is a Single Page Application (SPA)**
+
+# Future Features < a name="future-features">
+In the future, I hope to work on the possibility of users being able to:
+- Login
+- Save preferred information
+- Narrow their search to Countries, states, and regions in addition to the current cummulatives for each continent.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
