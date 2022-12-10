@@ -48,10 +48,11 @@ Covid Info App is an initiative aimed at providing accurate statistics and repor
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Live-Demo
-
+Follow this [link](https://covid-info-update.netlify.app/) to view the live demo of the app 🌐
 
 # Recorded video
 
+A visual tour about the features of the app can be found [here](https://www.loom.com/share/1a5076e2e6654095887b2f696eb9e265). I hope you'll enjoy it.
 
 
 # 💻 Getting Started <a name="getting-started"></a>
