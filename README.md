@@ -77,9 +77,8 @@ git clone https://github.com/AbayomiOlaoye/covid-info.git
 ```
 2. To access cloned directory run:
 ```bash
-cd Space-travelers-hub
-
-
+cd covid-info
+```
 
 ### Install
 > To install linters, react and other project's dependencies run:
