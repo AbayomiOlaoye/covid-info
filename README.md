@@ -45,16 +45,16 @@ Covid Info App is an initiative aimed at providing accurate statistics and repor
 
 # Key Feature <a name="key-features"></a>
 - **Fetches Covid-19 prevalence  data by continent**
-- **Users can search on continent basis**
+- **Users can search on a continent basis**
 - **Users can view Covid-related details of chosen continents**
-- **Use of conditional rendering to abstract supposed complexity of the app**
+- **Use of conditional rendering to abstract the supposed complexity of the app**
 - **The app is a Single Page Application (SPA)**
 
-# Future Features < a name="future-features">
+# Future Features < a name="future-features"></a>
 In the future, I hope to work on the possibility of users being able to:
 - Login
 - Save preferred information
-- Narrow their search to Countries, states, and regions in addition to the current cummulatives for each continent.
+- Narrow their search to Countries, states, and regions in addition to the current cumulative for each continent.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -63,7 +63,7 @@ Follow this [link](https://covid-info-update.netlify.app/) to view the live demo
 
 # Recorded video
 
-A visual tour about the features of the app can be found [here](https://www.loom.com/share/1a5076e2e6654095887b2f696eb9e265). I hope you'll enjoy it.
+A visual tour of the features of the app can be found [here](https://www.loom.com/share/1a5076e2e6654095887b2f696eb9e265). I hope you'll enjoy it.
 
 
 # 💻 Getting Started <a name="getting-started"></a>
@@ -73,14 +73,14 @@ A visual tour about the features of the app can be found [here](https://www.loom
 - To clone the project select the desired directory in cmd and run: `git clone https://github.com/AbayomiOlaoye/covid-info.git`
 - Install npm dependencies: `npm install`
 - To check the live preview: `npm run start`
-- For StyLint test, run: `npx stylelint "**/*.{css,scss}"`
+- For StyleLint test, run: `npx stylelint "**/*.{css,scss}"`
 - For WebHint test, run: `npx hint .`
 - For EsLint test, run: `npx eslint .`
 
 ## Prerequisites
-- Have basic level knowledge about HTML/CSS/JS/ES6/React/Redux
+- Have basic level knowledge of HTML/CSS/JS/ES6/React/Redux
 - Have basic level knowledge about linters/Webpack
-- Have basic level knowledge about the working of website
+- Have basic level knowledge about the working of the website
 
 ### Setup
 1. Download the **Zip** file or clone the repo with:
@@ -93,7 +93,7 @@ cd covid-info
 ```
 
 ### Install
-> To install linters, react and other project's dependencies run:
+> To install linters, react and other project dependencies run:
 ```bash
 npm install
 ```
@@ -114,11 +114,11 @@ Builds the app for production to the `build` folder.\
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single-build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point, you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However, we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 
 ### `npm test`
