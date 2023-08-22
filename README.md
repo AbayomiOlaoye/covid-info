@@ -19,7 +19,7 @@
 
 
 # Covid-Info
-Covid Info App is an initiative aimed at providing accurate statistics and reports about the coverage and cases of the pandemic in all regions of the world.
+Covid Info App is an initiative aimed at providing accurate statistics and reports about the coverage and cases of the pandemic in all regions of the world. It utilizes mobile-friendly user interfaces delivering amazing experiences to users.
 
 # 🛠 Built With <a name="built-with"></a>
  > This project was built with; 
